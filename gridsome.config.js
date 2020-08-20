@@ -14,7 +14,8 @@ function addStyleResource (rule) {
 module.exports = {
   siteName: 'Sam arbid Website',
   siteDescription: 'Storyblok with Gridsome portofolio',
-  siteUrl: 'https://demo.storyblok.com',
+  siteUrl: 'https://Samk13.github.io',
+  pathPrefix: '/storyblok-gridsum',
   plugins: [
     {
       use: 'gridsome-source-storyblok',
