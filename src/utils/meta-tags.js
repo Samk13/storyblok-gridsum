@@ -2,10 +2,10 @@
  * @type {Object}
  */
 export const metaConfig = {
-  siteUrl: 'https://demo.storyblok.com',
-  siteName: 'Gridsome Multilanguage Website',
+  siteUrl: 'https://samk13.github.io/storyblok-gridsum/home/',
+  siteName: 'Sam Arbid testing gridsome with storyblok',
   siteDescription: 'A demonstration website of use Storyblok with Gridsome',
-  siteImage: 'https://demo.storyblok.com/meta-image.jpg'
+  siteImage: 'https://avatars0.githubusercontent.com/u/36583694'
 }
 
 /**
