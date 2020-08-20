@@ -12,15 +12,15 @@ function addStyleResource (rule) {
 }
 
 module.exports = {
-  siteName: 'Gridsome Multilanguage Website',
-  siteDescription: 'A demonstration website of use Storyblok with Gridsome',
+  siteName: 'Sam arbid Website',
+  siteDescription: 'Storyblok with Gridsome portofolio',
   siteUrl: 'https://demo.storyblok.com',
   plugins: [
     {
       use: 'gridsome-source-storyblok',
       options: {
         client: {
-          accessToken: 'BTMojCrwizNsz0Haf5VmjQtt' // Your_Access_Token_Here
+          accessToken: process.env.STORYBLOK_TOKEN// Your_Access_Token_Here
         },
         version: 'published',
         downloadImages: true,
@@ -38,7 +38,7 @@ module.exports = {
   chainWebpack (config) {
     // Load variables for all vue-files
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
-    
+
     types.forEach(type => {
       addStyleResource(config.module.rule('sass').oneOf(type))
     })
