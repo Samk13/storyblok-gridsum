@@ -1,0 +1,20 @@
+// colors
+$primary-color: #000000;
+$secondary-color: #ccb48b;
+$blog-text-color: #5c5c5c;
+$text-color: #2c2c2c;
+$light-text-color: #ababab;
+$backgroud-blog-image-color: rgb(243, 243, 243);
+
+// spacings
+$desktop-container-spacing: 50px;
+$desktop-inner-spacing: 40px;
+$desktop-grid-gap: 40px;
+
+$mobile-container-spacing: 20px;
+$mobile-inner-spacing: 10px;
+$mobile-grid-gap: 10px;
+
+// breakpoints
+$mobile: 768px;
+$desktop: $mobile + 1px;

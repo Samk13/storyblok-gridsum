@@ -1,0 +1,97 @@
+@import './variables';
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
+
+/* global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $primary-color;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+/* utilities */
+.container, .layout {
+  margin: auto;
+  max-width: 1440px;
+}
+
+// button
+.button {
+  display: block;
+  max-width: 200px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.button.is-primary {
+  border: 2px solid $primary-color;
+  color: $primary-color;
+}
+
+.button.is-primary:hover,
+.button.is-primary:focus {
+  background-color: $primary-color;
+  color: invert($primary-color);
+}
+
+// hr divisor
+.divisor {
+  display: block;
+  max-width: 150px;
+  margin: $desktop-grid-gap auto;
+  border: none;
+  height: 3px;
+  background-color: $text-color;
+}
+
+@media screen and (max-width: $mobile) {
+  p, a, div, section {
+    text-align: center;
+  }
+
+  .only-desktop {
+    display: none;
+  }
+
+  .button {
+    padding: 10px;
+    // border-radius: 5px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .only-mobile {
+    display: none;
+  }
+}
+
+// overwrite the nprogress CSS rules
+#nprogress .bar {
+  background: $secondary-color;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px $secondary-color, 0 0 5px $secondary-color;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: $secondary-color;
+  border-left-color: $secondary-color;
+}
